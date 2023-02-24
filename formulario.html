@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>
+        h1
+        {   padding-left: 10px;}
+        div
+        {
+            display:block;
+            margin-left: 25px;
+            margin: 1px; 
+            padding: 5px;
+            padding-left: 10px;
+        }
+        label
+        {
+            margin-top: 8px;
+            display:block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <div>
+        <fieldset class="DadosPessoais">
+            <legend>Dados Pessoais:</legend>
+            <form method="POST" action="cadastro.html">
+                <label for="icodigo">Código:
+                    <input type="text" name="codigo" id="icodigo">
+                </label>
+
+                <label for="inome">Nome:
+                    <input type="text" name="nome" id="inome">
+                </label>
+
+                <label for="isenha">Senha:
+                    <input type="text" name="senha" id="isenha">
+                </label>
+
+                <label>Sexo:</label>
+                <label>
+                    <input type="radio" name="status">
+                    Feminino
+                    <input type="radio" name="status">
+                    Masculino
+                    <input type="radio" name="status">
+                    Ambos
+                    <input type="radio" name="status">
+                    Outro
+                </label>
+                <label>Idade:
+                    <input type="number">
+                </label>
+                <label>Cartão Crédito:
+                    <select>
+                        <option>Mastercard</option>
+                        <option>Visa</option>
+                        <option>American Express</option>
+                    </select>
+                </label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset class="DadosProfissionais"> 
+                <legend>Dados Profissionais:</legend>
+                <label>Cargo:
+                    <select>
+                        <option>Analista Júnior</option>
+                        <option>Analista Pleno</option>
+                        <option>Analista Sênior</option>
+                    </select>
+                </label>
+                <label>Dados Pessoais:
+                    <label><input type="checkbox">Fumante.</label>
+                    <label><input type="checkbox">Pratica Exercícios Físicos.</label>
+                    <label><input type="checkbox">Consome bebida alcoólica.</label>
+                </label>
+                <label>Experiências Profissionais:</label>
+                <label>
+                    <textarea></textarea>
+                </label>
+            </fieldset>
+        </div>
+
+        <div>
+        <button>Limpar</button>
+        <button>Inserir</button>
+        </div>
+    </form>
+</body>
+</html>
